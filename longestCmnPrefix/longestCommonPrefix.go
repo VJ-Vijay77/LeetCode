@@ -16,7 +16,7 @@ func longestCommonPrefix(strs []string) string {
 		}
 
 		prefix = prefix[:j]
-		fmt.Printf("\niteration:%d\nprefix:%s\n",i,prefix)
+
 		if prefix == "" {
 			// No common prefix found, exit early
 			break
@@ -29,7 +29,7 @@ func longestCommonPrefix(strs []string) string {
 func main() {
 	// Example usage
 	// input := []string{"flower","flow", "flight"}
-	input := []string{"dracu","lengui", "danger"}
+	input := []string{"dracu","drlengui", "dranger"}
 	result := longestCommonPrefix(input)
 	fmt.Println("Longest Common Prefix:", result)
 }
