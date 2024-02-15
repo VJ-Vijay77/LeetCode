@@ -5,6 +5,7 @@ import "fmt"
 
 func main() {
 	num := []int{1,2,1}
+	//expected result : num[1,2,1,1,2,1]
 	result := getConcatenation(num)
 	fmt.Println(result)
 }
@@ -16,7 +17,6 @@ func concatenateArray(num []int)[]int{
 	j:=0
 	for i:=0; i<n; i++ {
 		if j == len(num) {
-			fmt.Println("inside j if, j=",j)
 			j = 0
 		}
 		res[i] = num[j] 
