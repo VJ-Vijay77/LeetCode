@@ -19,6 +19,6 @@ func maxProductDifference(nums []int) int {
 	firstPair2 := nums[len(nums)-2]
 	lastPair1 := nums[0]
 	lastPair2 := nums[1]
-	
+
 	return (firstPair1 * firstPair2) - (lastPair1 * lastPair2)
 }
