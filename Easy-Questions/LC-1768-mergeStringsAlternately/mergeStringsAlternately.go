@@ -16,6 +16,7 @@ func main() {
 func mergeAlternately(word1 string, word2 string) string {
 	var newstring string
 	count := 1
+
 	for i := 0; i < len(word1); i++ {
 
 		newstring += string(word1[i])
@@ -25,10 +26,12 @@ func mergeAlternately(word1 string, word2 string) string {
 			newstring += string(word2[i+1:])
 			break
 		}
+
 		if count == len(word2) {
 			newstring += string(word1[i+1:])
 			break
 		}
+
 		count++
 	}
 
