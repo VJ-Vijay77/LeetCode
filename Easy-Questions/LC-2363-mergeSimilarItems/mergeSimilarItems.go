@@ -34,6 +34,6 @@ func mergeSimilarItems(items1 [][]int, items2 [][]int) [][]int {
 	sort.Slice(ans, func(i, j int) bool {
 	  return ans[i][0] < ans[j][0]
 	})
-  //smalll changes
+  
 	return ans
 }
