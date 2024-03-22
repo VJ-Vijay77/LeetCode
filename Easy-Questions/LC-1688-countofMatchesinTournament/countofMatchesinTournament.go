@@ -17,7 +17,7 @@ func main(){
 func numberOfMatches(n int) int {
     matches := 0
 	count := 0
-	for n>0{
+	for {
 		if n%2 == 0 {
 			matches = n/2
 		}else{
