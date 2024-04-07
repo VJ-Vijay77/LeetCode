@@ -10,6 +10,7 @@ func main() {
 	// Time from [1,1] to [3,4] = 3 seconds 
 	// Time from [3,4] to [-1,0] = 4 seconds
 	// Total time = 7 seconds
+	// smaple push
 	fmt.Println("Result := ",minTimeToVisitAllPoints(points))
 
 }
